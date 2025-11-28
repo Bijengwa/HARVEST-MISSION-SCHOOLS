@@ -8,36 +8,44 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <!-- Header Section -->
-    <header>
-        <div class="container">
-            <div class="header-content">
+
+    <!-- Header Section -->        
+    <header class="header">
+        <div class="header-content">
+
+            <!-- LOGO + LANGUAGE SWITCH -->
+            <div class="logo-lang">
                 <div class="logo">
                     <img src="images/harvest_logo.png" alt="Harvest Mission Schools Logo">
                     <h1>HARVEST MISSION SCHOOLS</h1>
                 </div>
-                <button class="menu-toggle">
-                    <i class="fas fa-bars"></i>
-                </button>
 
-                <nav>
-                    <ul>
-                        <li><a href="#home" data-en="Home" data-sw="Nyumbani"><i class="fas fa-home"></i> <span class="nav-text">Home</span></a></li>
-                        <li><a href="#about" data-en="About" data-sw="Kuhusu"><i class="fas fa-info-circle"></i> <span class="nav-text">About</span></a></li>
-                        <li><a href="#schools" data-en="Schools" data-sw="Shule"><i class="fas fa-school"></i> <span class="nav-text">Schools</span></a></li>
-                        <li><a href="#news" data-en="News" data-sw="Habari"><i class="fas fa-newspaper"></i> <span class="nav-text">News</span></a></li>
-                        <li><a href="#contacts" data-en="Contact" data-sw="Mawasiliano"><i class="fas fa-envelope"></i> <span class="nav-text">Contact</span></a></li>
-                    </ul>
-                </nav>
                 <button class="lang-btn" id="languageToggle">
                     <i class="fas fa-language"></i>
                     <span class="lang-text">KISWAHILI</span>
                 </button>
             </div>
+
+            <!-- NAVIGATION -->
+            <div class="navig">
+                <button class="menu-toggle" id="hamburgerBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+
+                <nav id="mobileNav">
+                    <ul>
+                        <li><a href="#home" data-en="Home" data-sw="Nyumbani"><i class="fas fa-home"></i> Home</a></li>
+                        <li><a href="#about" data-en="About" data-sw="Kuhusu"><i class="fas fa-info-circle"></i> About</a></li>
+                        <li><a href="#schools" data-en="Schools" data-sw="Shule"><i class="fas fa-school"></i> Schools</a></li>
+                        <li><a href="#news" data-en="News" data-sw="Habari"><i class="fas fa-newspaper"></i> News</a></li>
+                        <li><a href="#contacts" data-en="Contact" data-sw="Mawasiliano"><i class="fas fa-envelope"></i> Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+
         </div>
-
-
     </header>
+        
 
     <!-- Home Section with Carousel -->
     <section class="home-section" id="home" >
@@ -158,7 +166,7 @@
                 
                 <div class="about-image">
                     <div class="image-container">
-                        <img src="images/STUDENTS-4.jpg"          alt="Harvest Mission Students" data-en="Students at Harvest Mission Schools" data-sw="Wanafunzi wa Shule za Harvest Mission">
+                        <img src="https://images.unsplash.com/photo-1588072432836-e10032774350?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80">
                         <div class="achievement-badge">
                             <div class="badge-content">
                                 <span class="badge-number">18+</span>

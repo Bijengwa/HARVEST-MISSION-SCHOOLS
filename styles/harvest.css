@@ -13,146 +13,228 @@ body {
     padding-top: 60px;
 }
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-/* Header Styles */
-header {
-    background-color: #8B4513;
-    color: white;
-    padding: 15px 0;
-    position: fixed;
+/* ===== BASE HEADER ===== */
+.header {
     width: 100%;
+    background: #8B4513; /* Brown background to match theme */
+    box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+    position: fixed;
     top: 0;
-    z-index: 1000;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    left: 0;
+    z-index: 100;
 }
 
 .header-content {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
+    padding: 12px 5%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* ===== LOGO SECTION ===== */
+.logo-lang {
+    display: flex;
+    align-items: center;
+    gap: 25px;
 }
 
 .logo {
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 12px;
 }
 
 .logo img {
-    width: 60px;
-    height: 60px;
+    width: 55px;
+    height: 55px;
     border-radius: 50%;
     border: 2px solid #D58A2E;
 }
 
 .logo h1 {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     font-weight: 700;
+    color: #ffffff; /* White text for contrast */
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
 }
 
-.menu-toggle {
-    display: none;
-    background: none;
+/* ===== LANGUAGE BUTTON ===== */
+.lang-btn {
+    background: linear-gradient(135deg, #D58A2E, #F4A460);
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 6px;
     border: none;
-    color: white;
-    font-size: 2rem;
-    cursor: pointer;
-    z-index: 2000;
-}
-
-
-nav ul {
     display: flex;
-    list-style: none;
-    gap: 25px;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(213, 138, 46, 0.3);
 }
 
-nav a {
-    color: white;
-    text-decoration: none;
+.lang-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(213, 138, 46, 0.4);
+}
+
+/* ===== NAVIGATION ===== */
+.navig nav ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+.navig nav a {
+    color: #ffffff; /* White text */
     font-weight: 500;
-    transition: color 0.3s;
-    padding: 5px 10px;
-    border-radius: 4px;
     display: flex;
     align-items: center;
     gap: 8px;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    font-size: 1rem;
 }
 
-nav a:hover {
-    color: #D58A2E;
+.navig nav a:hover {
+    color: #D58A2E; /* Gold on hover */
     background-color: rgba(255,255,255,0.1);
 }
 
-/* Overlay behind menu */
-.nav-overlay {
-    display: none;
-    position: fixed;
-    top: 0; left: 0;
-    width: 100%; height: 100%;
-    background: rgba(0,0,0,0.5);
-    z-index: 1500;
+.navig nav a i {
+    font-size: 1.1rem;
 }
 
-/* MOBILE NAV */
+/* ===== HAMBURGER BUTTON ===== */
+.menu-toggle {
+    display: none;
+    background: rgba(255,255,255,0.1);
+    border: 1px solid rgba(255,255,255,0.3);
+    border-radius: 4px;
+    padding: 8px 12px;
+    font-size: 1.3rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: #ffffff;
+}
+
+.menu-toggle:hover {
+    background: rgba(255,255,255,0.2);
+    transform: scale(1.05);
+}
+
+/* ===== MOBILE RESPONSIVE ===== */
+@media (max-width: 920px) {
+    .logo h1 {
+        font-size: 1.2rem;
+    }
+    
+    .navig nav ul {
+        gap: 20px;
+    }
+}
+
+/* ===== MOBILE NAV DROPDOWN ===== */
 @media (max-width: 768px) {
-
-    nav {
-        position: absolute;
-        top: 70px;
-        left: 0;
-        width: 100%;
-        background: #8B4513;
-        display: none;
-        padding: 20px 0;
-        animation: slideDown 0.3s ease forwards;
-        z-index: 1600;
-    }
-
-    nav.show-menu {
-        display: block;
-    }
-
-    @keyframes slideDown {
-        from { opacity: 0; transform: translateY(-15px); }
-        to { opacity: 1; transform: translateY(0); }
-    }
-
-    nav ul {
-        flex-direction: column;
-        text-align: center;
-        gap: 18px;
+    .header-content {
+        padding: 10px 5%;
     }
 
     .menu-toggle {
         display: block;
     }
+
+    /* Hide desktop nav */
+    .navig nav ul {
+        display: none;
+    }
+
+    /* Mobile nav dropdown */
+    #mobileNav {
+        position: absolute;
+        top: 70px;
+        right: 0;
+        width: 280px;
+        background: #8B4513; /* Brown background */
+        box-shadow: -4px 4px 20px rgba(0,0,0,0.25);
+        padding: 25px 20px;
+        border-radius: 12px 0 0 12px;
+        display: none;
+        animation: slideIn 0.3s ease forwards;
+        border: 1px solid rgba(255,255,255,0.1);
+    }
+
+    /* Visible nav */
+    #mobileNav.active {
+        display: block;
+    }
+
+    /* Stack menu vertically */
+    #mobileNav ul {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    #mobileNav a {
+        color: #ffffff;
+        font-weight: 600;
+        font-size: 1.1rem;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        padding: 12px 15px;
+        border-radius: 8px;
+        transition: all 0.3s ease;
+    }
+
+    #mobileNav a:hover {
+        color: #D58A2E;
+        background-color: rgba(255,255,255,0.15);
+        transform: translateX(-5px);
+    }
+
+    #mobileNav a i {
+        width: 20px;
+        text-align: center;
+    }
+
+    @keyframes slideIn {
+        from {
+            transform: translateX(100%);
+            opacity: 0;
+        }
+        to {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
 }
 
-
-/* Language Button Styles */
-.lang-btn {
-    background-color: #D58A2E;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-weight: 600;
-    transition: all 0.3s;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-}
-
-.lang-btn:hover {
-    background-color: #b87324;
-    transform: translateY(-2px);
+/* Small mobile adjustments */
+@media (max-width: 480px) {
+    .logo h1 {
+        font-size: 1.1rem;
+    }
+    
+    .logo img {
+        width: 45px;
+        height: 45px;
+    }
+    
+    .lang-btn {
+        padding: 6px 12px;
+        font-size: 0.9rem;
+    }
+    
+    #mobileNav {
+        width: 250px;
+    }
 }
 
 

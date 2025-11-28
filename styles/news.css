@@ -1,3 +1,229 @@
+
+        /* ===== BASE HEADER ===== */
+        .header {
+            width: 100%;
+            background: #8B4513; /* Brown background to match theme */
+            box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 100;
+        }
+
+        .header-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 12px 5%;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        /* ===== LOGO SECTION ===== */
+        .logo-lang {
+            display: flex;
+            align-items: center;
+            gap: 25px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .logo img {
+            width: 55px;
+            height: 55px;
+            border-radius: 50%;
+            border: 2px solid #D58A2E;
+        }
+
+        .logo h1 {
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: #ffffff; /* White text for contrast */
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+        }
+
+        /* ===== LANGUAGE BUTTON ===== */
+        .lang-btn {
+            background: linear-gradient(135deg, #D58A2E, #F4A460);
+            color: #fff;
+            padding: 8px 16px;
+            border-radius: 6px;
+            border: none;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 8px rgba(213, 138, 46, 0.3);
+        }
+
+        .lang-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(213, 138, 46, 0.4);
+        }
+
+        /* ===== NAVIGATION ===== */
+        .navig nav ul {
+            display: flex;
+            gap: 30px;
+            list-style: none;
+        }
+
+        .navig nav a {
+            color: #ffffff; /* White text */
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            text-decoration: none;
+            padding: 8px 12px;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+            font-size: 1rem;
+        }
+
+        .navig nav a:hover {
+            color: #D58A2E; /* Gold on hover */
+            background-color: rgba(255,255,255,0.1);
+        }
+
+        .navig nav a i {
+            font-size: 1.1rem;
+        }
+
+        /* ===== HAMBURGER BUTTON ===== */
+        .menu-toggle {
+            display: none;
+            background: rgba(255,255,255,0.1);
+            border: 1px solid rgba(255,255,255,0.3);
+            border-radius: 4px;
+            padding: 8px 12px;
+            font-size: 1.3rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            color: #ffffff;
+        }
+
+        .menu-toggle:hover {
+            background: rgba(255,255,255,0.2);
+            transform: scale(1.05);
+        }
+
+        /* ===== MOBILE RESPONSIVE ===== */
+        @media (max-width: 920px) {
+            .logo h1 {
+                font-size: 1.2rem;
+            }
+            
+            .navig nav ul {
+                gap: 20px;
+            }
+        }
+
+        /* ===== MOBILE NAV DROPDOWN ===== */
+        @media (max-width: 768px) {
+            .header-content {
+                padding: 10px 5%;
+            }
+
+            .menu-toggle {
+                display: block;
+            }
+
+            /* Hide desktop nav */
+            .navig nav ul {
+                display: none;
+            }
+
+            /* Mobile nav dropdown */
+            #mobileNav {
+                position: absolute;
+                top: 70px;
+                right: 0;
+                width: 280px;
+                background: #8B4513; /* Brown background */
+                box-shadow: -4px 4px 20px rgba(0,0,0,0.25);
+                padding: 25px 20px;
+                border-radius: 12px 0 0 12px;
+                display: none;
+                animation: slideIn 0.3s ease forwards;
+                border: 1px solid rgba(255,255,255,0.1);
+            }
+
+            /* Visible nav */
+            #mobileNav.active {
+                display: block;
+            }
+
+            /* Stack menu vertically */
+            #mobileNav ul {
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            #mobileNav a {
+                color: #ffffff;
+                font-weight: 600;
+                font-size: 1.1rem;
+                display: flex;
+                align-items: center;
+                gap: 12px;
+                padding: 12px 15px;
+                border-radius: 8px;
+                transition: all 0.3s ease;
+            }
+
+            #mobileNav a:hover {
+                color: #D58A2E;
+                background-color: rgba(255,255,255,0.15);
+                transform: translateX(-5px);
+            }
+
+            #mobileNav a i {
+                width: 20px;
+                text-align: center;
+            }
+
+            @keyframes slideIn {
+                from {
+                    transform: translateX(100%);
+                    opacity: 0;
+                }
+                to {
+                    transform: translateX(0);
+                    opacity: 1;
+                }
+            }
+        }
+
+        /* Small mobile adjustments */
+        @media (max-width: 480px) {
+            .logo h1 {
+                font-size: 1.1rem;
+            }
+            
+            .logo img {
+                width: 45px;
+                height: 45px;
+            }
+            
+            .lang-btn {
+                padding: 6px 12px;
+                font-size: 0.9rem;
+            }
+            
+            #mobileNav {
+                width: 250px;
+            }
+        }
+
+        
         /* PAGE HEADER STYLE */
         .page-header {
             padding: 120px 20px 60px;

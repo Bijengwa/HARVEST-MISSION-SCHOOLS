@@ -1,38 +1,26 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const menuToggle = document.querySelector(".menu-toggle");
-    const nav = document.querySelector("nav");
-
-    // Create overlay
-    let overlay = document.createElement("div");
-    overlay.classList.add("nav-overlay");
-    document.body.appendChild(overlay);
+    const menuToggle = document.getElementById("hamburgerBtn");
+    const nav = document.getElementById("mobileNav");
 
     let isOpen = false;
 
     function toggleMenu() {
         isOpen = !isOpen;
+        nav.classList.toggle("active", isOpen);
 
-        nav.classList.toggle("show-menu", isOpen);
-        overlay.style.display = isOpen ? "block" : "none";
-
-        // Change icon (bars <-> X)
-        menuToggle.innerHTML = isOpen 
-            ? '<i class="fas fa-times"></i>' 
+        // switch icon
+        menuToggle.innerHTML = isOpen
+            ? '<i class="fas fa-times"></i>'
             : '<i class="fas fa-bars"></i>';
     }
 
+    // open/close on button
     menuToggle.addEventListener("click", toggleMenu);
 
-    // Click outside closes menu
-    overlay.addEventListener("click", toggleMenu);
-
-    // NEW: Close menu on nav link click (prevents "stuck" open state)
-    const navLinks = nav.querySelectorAll("a");
-    navLinks.forEach(link => {
+    // close when clicking a nav link
+    nav.querySelectorAll("a").forEach(link => {
         link.addEventListener("click", () => {
-            if (isOpen) {
-                toggleMenu(); // Close menu
-            }
+            if (isOpen) toggleMenu();
         });
     });
 });
