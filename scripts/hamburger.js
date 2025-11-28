@@ -25,4 +25,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Click outside closes menu
     overlay.addEventListener("click", toggleMenu);
+
+    // NEW: Close menu on nav link click (prevents "stuck" open state)
+    const navLinks = nav.querySelectorAll("a");
+    navLinks.forEach(link => {
+        link.addEventListener("click", () => {
+            if (isOpen) {
+                toggleMenu(); // Close menu
+            }
+        });
+    });
 });

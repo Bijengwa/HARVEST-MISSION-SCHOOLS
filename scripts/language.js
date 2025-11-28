@@ -14,22 +14,25 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // UNIVERSAL LANGUAGE UPDATER
   function updateAllTexts() {
-    const allElements = document.querySelectorAll("[data-en]");
+      const allElements = document.querySelectorAll("[data-en]");
 
-    allElements.forEach((el) => {
-      const newValue =
-        currentLang === "en"
-          ? el.getAttribute("data-en")
-          : el.getAttribute("data-sw");
+      allElements.forEach((el) => {
+          const newValue = currentLang === "en" ? el.getAttribute("data-en") : el.getAttribute("data-sw");
 
-      // Update text content (normal text)
-      el.textContent = newValue;
+          // Target only text-specific children (e.g., spans or direct text)
+          const textTargets = el.querySelectorAll('.nav-text, .btn-text, [data-lang-text]'); // Add class to text spans if needed
+          if (textTargets.length > 0) {
+              textTargets.forEach(target => target.textContent = newValue);
+          } else {
+              // For simple elements (h2, p, etc.), safe to use textContent
+              el.textContent = newValue;
+          }
 
-      // Update placeholders
-      if (el.placeholder !== undefined) {
-        el.placeholder = newValue;
-      }
-    });
+          // Handle placeholders separately (inputs/textareas)
+          if (el.placeholder !== undefined) {
+              el.placeholder = newValue;
+          }
+      });
   }
 
   // EVENT LISTENER
