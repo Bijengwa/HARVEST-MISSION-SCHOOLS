@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harvest Mission Schools - Home</title>
+    <link rel="stylesheet" href="styles/harvest.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="images/harvest_logo.png" alt="Harvest Mission Schools Logo">
+                    <h1>HARVEST MISSION SCHOOLS</h1>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#home" data-en="Home" data-sw="Nyumbani"><i class="fas fa-home"></i> <span class="nav-text">Home</span></a></li>
+                        <li><a href="#about" data-en="About" data-sw="Kuhusu"><i class="fas fa-info-circle"></i> <span class="nav-text">About</span></a></li>
+                        <li><a href="#schools" data-en="Schools" data-sw="Shule"><i class="fas fa-school"></i> <span class="nav-text">Schools</span></a></li>
+                        <li><a href="#" data-en="News" data-sw="Habari"><i class="fas fa-newspaper"></i> <span class="nav-text">News</span></a></li>
+                        <li><a href="#" data-en="Contact" data-sw="Mawasiliano"><i class="fas fa-envelope"></i> <span class="nav-text">Contact</span></a></li>
+                    </ul>
+                </nav>
+                <button class="lang-btn" id="languageToggle">
+                    <i class="fas fa-language"></i>
+                    <span class="lang-text">KISWAHILI</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Home Section with Carousel -->
+    <section class="home-section" id="home" >
+        <div class="carousel">
+            <!-- Slide 1 -->
+            <div class="carousel-slide active" style="background-image: url('https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80');">
+                <div class="slide-content">
+                    <h2 data-en="HARVEST MISSION HIGH SCHOOL" data-sw="SHULE YA SEKONDARI HARVEST MISSION">HARVEST MISSION HIGH SCHOOL</h2>
+                    <p data-en="Excellence in education with a focus on holistic development and character building." 
+                       data-sw="Ubora katika elimu kwa kuzingatia ukuzaji kamili na ujenzi wa tabia.">
+                       Excellence in education with a focus on holistic development and character building.
+                    </p>
+                </div>
+            </div>
+            
+            <!-- Slide 2 -->
+            <div class="carousel-slide" style="background-image: url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80');">
+                <div class="slide-content">
+                    <h2 data-en="HARVEST MISSION SECONDARY SCHOOL" data-sw="SHULE YA UPILI HARVEST MISSION">HARVEST MISSION SECONDARY SCHOOL</h2>
+                    <p data-en="Nurturing young minds to become responsible citizens and future leaders." 
+                       data-sw="Kulea akili za vijana kuwa raia wenye madaraka na viongozi wa baadaye.">
+                       Nurturing young minds to become responsible citizens and future leaders.
+                    </p>
+                </div>
+            </div>
+            
+            <!-- Slide 3 -->
+            <div class="carousel-slide" style="background-image: url('https://images.unsplash.com/photo-1511632765486-a01980e01a18?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80');">
+                <div class="slide-content">
+                    <h2 data-en="WE BUILD MINDS" data-sw="TUNAJENGA AKILI">WE BUILD MINDS</h2>
+                    <p data-en="Developing critical thinking, creativity, and problem-solving skills for a brighter future." 
+                       data-sw="Kukuza ustadi wa kufikiria kwa kina, ubunifu, na utatuzi wa matatizo kwa mustakabali mkubwa.">
+                       Developing critical thinking, creativity, and problem-solving skills for a brighter future.
+                    </p>
+                </div>
+            </div>
+            
+            <!-- Slide 4 -->
+            <div class="carousel-slide" style="background-image: url('https://images.unsplash.com/photo-1546410531-bb4caa6b424d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80');">
+                <div class="slide-content">
+                    <h2 data-en="WE EMPOWER" data-sw="TUNAWAPA NGUVU">WE EMPOWER</h2>
+                    <p data-en="Equipping students with knowledge, skills, and values to succeed in life." 
+                       data-sw="Kuwaandaa wanafunzi kwa maarifa, ustadi, na maadili ya kufanikiwa maishani.">
+                       Equipping students with knowledge, skills, and values to succeed in life.
+                    </p>
+                </div>
+            </div>
+            
+            <!-- Slide 5 -->
+            <div class="carousel-slide" style="background-image: url('https://images.unsplash.com/photo-1503676260728-1c00da094a0b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80');">
+                <div class="slide-content">
+                    <h2 data-en="QUALITY EDUCATION" data-sw="ELIMU BORA">QUALITY EDUCATION</h2>
+                    <p data-en="Committed to providing the highest standards of academic excellence." 
+                       data-sw="Tumejikita katika kutoa viwango vya juu zaidi vya ubora wa kiakademia.">
+                       Committed to providing the highest standards of academic excellence.
+                    </p>
+                </div>
+            </div>
+            
+            <!-- Carousel Controls -->
+            <div class="carousel-controls">
+                <button class="carousel-control prev"><i class="fas fa-chevron-left"></i></button>
+                <button class="carousel-control next"><i class="fas fa-chevron-right"></i></button>
+            </div>
+            
+            <!-- Carousel Indicators -->
+            <div class="carousel-indicators">
+                <div class="indicator active"></div>
+                <div class="indicator"></div>
+                <div class="indicator"></div>
+                <div class="indicator"></div>
+                <div class="indicator"></div>
+            </div>
+        </div>
+        
+        <!-- Special Level Buttons -->
+        <div class="level-buttons">
+            <button class="level-btn" data-en="A-LEVEL" data-sw="A-LEVEL">
+                <i class="fas fa-graduation-cap"></i> 
+                <span class="btn-text">A-LEVEL</span>
+            </button>
+            <button class="level-btn" data-en="O-LEVEL" data-sw="O-LEVEL">
+                <i class="fas fa-book-open"></i> 
+                <span class="btn-text">O-LEVEL</span>
+            </button>
+        </div>
+    </section>
+
+    <section class="about-section" id="about" >
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="section-header">
+                        <h3 class="welcome-title" data-en="WELCOME TO HARVEST MISSION SCHOOLS" data-sw="KARIBU SHULENI ZA HARVEST MISSION">WELCOME TO HARVEST MISSION SCHOOLS</h3>
+                        <h1 class="main-title" data-en="We commit to the next generation" data-sw="Tunajizatiti kwa kizazi kijacho">We commit to the next generation</h1>
+                    </div>
+                    
+                    <div class="about-description">
+                        <p data-en="Harvest Mission Schools is a lively learning community with thousands of students from Nursery to A-Level. It's a space for curious and ambitious learners to grow mentally, creatively, and personally." 
+                           data-sw="Shule za Harvest Mission ni jumuiya ya kujifunza yenye uhai na wanafunzi elfu kutoka Chekechea hadi Kidato cha Sita. Ni nafasi ya wanafunzi wadadisi na wenye nia ya kukua kiakili, kibunifu na kibinafsi.">
+                           Harvest Mission Schools is a lively learning community with thousands of students from Nursery to A-Level. It's a space for curious and ambitious learners to grow mentally, creatively, and personally.
+                        </p>
+                        
+                        <p data-en="Our teachers deliver top-tier lessons that spark curiosity and keep students engaged. We focus on building not just academic skill, but strong character, leadership, and responsibility." 
+                           data-sw="Waalimu wetu hutoa masomo bora yanayochochea udadisi na kuwashirikisha wanafunzi. Tunazingatia kujenga sio tu ustadi wa kiakili, bali pia tabia nzuri, uongozi, na uwajibikaji.">
+                           Our teachers deliver top-tier lessons that spark curiosity and keep students engaged. We focus on building not just academic skill, but strong character, leadership, and responsibility.
+                        </p>
+                        
+                        <p data-en="Started with a vision to uplift education in Kagera, Harvest Mission has grown into one of Tanzania's trusted institutions. We're dedicated to shaping students who can thrive in a fast-changing world." 
+                           data-sw="Zilianza kwa dhamira ya kuinua elimu Kagera, Harvest Mission imekua na kuwa moja ya taasisi za kuaminika Tanzania. Tumejikita katika kuwaanda wanafunzi wanaoweza kustawi katika ulimwengu unaobadilika kwa kasi.">
+                           Started with a vision to uplift education in Kagera, Harvest Mission has grown into one of Tanzania's trusted institutions. We're dedicated to shaping students who can thrive in a fast-changing world.
+                        </p>
+                    </div>
+                    
+
+
+                </div>
+                
+                <div class="about-image">
+                    <div class="image-container">
+                        <img src="images/STUDENTS-4.jpg"          alt="Harvest Mission Students" data-en="Students at Harvest Mission Schools" data-sw="Wanafunzi wa Shule za Harvest Mission">
+                        <div class="achievement-badge">
+                            <div class="badge-content">
+                                <span class="badge-number">18+</span>
+                                <span class="badge-text" data-en="Years of Excellence" data-sw="Miaka ya Ubora">Years of Excellence</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <section class="why-choose-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-en="WHY CHOOSE HARVEST MISSION" data-sw="KWANINI UTUCHAGUE">WHY CHOOSE HARVEST MISSION</h2>
+                <p class="section-subtitle" data-en="Discover what makes us different" data-sw="GUNDUA KILE KINACHOTUFANYA TOFAUTI">Discover what makes us different</p>
+            </div>
+
+            <div class="features-grid">
+                <!-- Feature 1: Spiritual Foundation -->
+                <div class="feature-card">
+                    <div class="feature-image" id="spiritual-life">
+                        <h3 class="feature-title" data-en="Spiritual Foundation" data-sw="Msingi wa Kiroho">Spiritual Foundation</h3>
+                    </div>
+                    <div class="feature-content">
+                        <div class="feature-icon">
+                            <i class="fas fa-pray"></i>
+                        </div>
+                        <p class="feature-description" data-en="We build students on strong Christian values, helping them grow in faith, character, and purpose." 
+                        data-sw="Tunawajenga wanafunzi kwenye maadili madhubuti ya Kikristo, kuwasaidia kukua katika imani, tabia, na kusudi.">
+                        We build students on strong Christian values, helping them grow in faith, character, and purpose.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Feature 2: Quality Education -->
+                <div class="feature-card">
+                    <div class="feature-image" id="quality-education">
+                        <h3 class="feature-title" data-en="Quality & Modern Education" data-sw="Elimu Bora na Ya Kisasa">Quality & Modern Education</h3>
+                    </div>
+                    <div class="feature-content">
+                        <div class="feature-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <p class="feature-description" data-en="Skilled teachers, updated curriculum, and effective teaching methods that prepare learners for academic success and future opportunities." 
+                        data-sw="Walimu wenye ujuzi, mtaala wa kisasa, na mbinu bora za kufundisha zinazowaandaa wanafunzi kwa mafanikio ya kiakademia na fursa za baadaye.">
+                        Skilled teachers, updated curriculum, and effective teaching methods that prepare learners for academic success and future opportunities.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Feature 3: Parent Partnership -->
+                <div class="feature-card">
+                    <div class="feature-image" id="parent-partnership">
+                        <h3 class="feature-title" data-en="Strong Parent–School Partnership" data-sw="Ushirikiano Imara wa Wazazi–Shule">Strong Parent–School Partnership</h3>
+                    </div>
+                    <div class="feature-content">
+                        <div class="feature-icon">
+                            <i class="fas fa-handshake"></i>
+                        </div>
+                        <p class="feature-description" data-en="We stay connected with parents through open communication and shared goals, making sure every child gets the support they need." 
+                        data-sw="Tunabaki na uhusiano na wazazi kupitia mawasiliano ya wazi na malengo ya pamoja, kuhakikisha kila mtoto anapata msaada anayohitaji.">
+                        We stay connected with parents through open communication and shared goals, making sure every child gets the support they need.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Feature 4: Discipline & Character -->
+                <div class="feature-card">
+                    <div class="feature-image" id="character-building">
+                        <h3 class="feature-title" data-en="Discipline & Character Building" data-sw="Nidhamu na Ujenzi wa Tabia">Discipline & Character Building</h3>
+                    </div>
+                    <div class="feature-content">
+                        <div class="feature-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <p class="feature-description" data-en="We train students to be responsible, respectful, confident, and guided by values that shape their future." 
+                        data-sw="Tunawafunza wanafunzi kuwa wenye uwajibikaji, wenye heshima, wenye kujiamini, na kuongozwa na maadili yanayowaumba mustakabali wao.">
+                        We train students to be responsible, respectful, confident, and guided by values that shape their future.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Schools Section -->
+    <section class="schools-section" id="schools">
+        <div class="container">
+
+            <div class="schools-section-header">
+                <h2 class="section-title" data-en="OUR SCHOOLS" data-sw="SHULE ZETU">
+                    OUR SCHOOLS
+                </h2>
+                    
+                <p class="schools-subtitle" data-en="Harvest Mission operates two major schools:" data-sw="Harvest Mission inamiliki shule mbili kuu:">
+                    Harvest Mission operates two major schools:
+                </p>
+            </div>
+
+            <div class="the-schools">
+
+                <!-- A-LEVEL -->
+                <div class="school-box">
+                    <div class="school-title" 
+                        style="background-image: url('https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?q=80&w=1200&auto=format&fit=crop');">
+                        <h3 data-en="HARVEST MISSION HIGH SCHOOL (A-LEVEL)" data-sw="HARVEST MISSION HIGH SCHOOL (A-LEVEL)">
+                            HARVEST MISSION HIGH SCHOOL (A-LEVEL)
+                        </h3>
+                    </div>
+
+                    <div class="school-info">
+                        <p class="reg-label" data-en="REG/S.1234 • Est. 2015" data-sw="REG/S.1234 • Ilianzishwa 2015">
+                            REG/S.1234 • Est. 2015
+                        </p>
+
+                        <h4 class="combination-header" data-en="Available A-Level Combinations" data-sw="Miegamo Inayopatikana Kidato cha Tano">
+                            Available A-Level Combinations
+                        </h4>
+
+                        <ul class="combo-list">
+                            <li>PCB</li>
+                            <li>CBG</li>
+                            <li>EGM</li>
+                            <li>HGE</li>
+                            <li>HGL</li>
+                            <li>HKL</li>
+                            <li>DIVINITY</li>
+                        </ul>
+
+                        <h4 class="requirements-header" data-en="Entry Requirements" data-sw="Sifa za Kujiunga">
+                            Entry Requirements
+                        </h4>
+
+                        <ul class="requirements-list">
+                            <li data-en="Applicant must have at least three C grades." data-sw="Mwombaji awe amepata angalau C tatu.">
+                                Applicant must have at least three C grades.
+                            </li>
+                            <li data-en="Affordable fees payable in four installments." data-sw="Ada nafuu inalipwa kwa awamu nne.">
+                                Affordable fees payable in four installments.
+                            </li>
+                            <li data-en="Pre–Form Five starts from 08/02/2021 to 30/05/2021." data-sw="Masomo ya Pre–Form Five kuanzia 08/02/2021 hadi 30/05/2021.">
+                                Pre–Form Five starts from 08/02/2021 to 30/05/2021.
+                            </li>
+                        </ul>
+
+                        <p class="tagline" data-en="We offer free academic consultation daily." data-sw="Tunatoa ushauri wa elimu kila siku bila gharama.">
+                            We offer free academic consultation daily.
+                        </p>
+                    </div>
+                </div>
+
+
+                <!-- O-LEVEL -->
+                <div class="school-box">
+                    <div class="school-title"
+                        style="background-image: url('https://images.unsplash.com/photo-1588072432836-e10032774350?q=80&w=1200&auto=format&fit=crop');">
+                        <h3 data-en="HARVEST MISSION SECONDARY SCHOOL (O-LEVEL)" data-sw="HARVEST MISSION SECONDARY SCHOOL (O-LEVEL)">
+                            HARVEST MISSION SECONDARY SCHOOL (O-LEVEL)
+                        </h3>
+                    </div>
+
+                    <div class="school-info">
+                        <p class="reg-label" data-en="REG/S.5678 • Est. 2010" data-sw="REG/S.5678 • Ilianzishwa 2010">
+                            REG/S.5678 • Est. 2010
+                        </p>
+
+                        <h4 class="requirements-header" data-en="About the O-Level Wing" data-sw="Kuhusu Kidato cha Kwanza–Nne">
+                            About the O-Level Wing
+                        </h4>
+
+                        <p class="school-description"
+                            data-en="The O-Level section focuses on strong foundations in all core subjects, discipline, and character formation. Students are well prepared for national examinations and future A-Level combinations."
+                            data-sw="Sehemu ya O-Level inalenga misingi imara ya masomo yote ya msingi, nidhamu na ujenzi wa tabia. Wanafunzi huandaliwa vizuri kwa mitihani ya taifa na miegamo ya A-Level.">
+                            The O-Level section focuses on strong foundations in all core subjects, discipline, and character formation. Students are well prepared for national examinations and future A-Level combinations.
+                        </p>
+
+                        <p class="tagline" data-en="We guide students academically every day at no cost." data-sw="Tunawaongoza wanafunzi kielimu kila siku bila gharama yoyote.">
+                            We guide students academically every day at no cost.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Results section -->
+    <section class="results-section" id="results">
+        <div class="container">
+
+            <div class="section-header">
+                <h2 class="section-title" 
+                    data-en="SCHOOL EXAMINATION RESULTS" 
+                    data-sw="MATOKEO YA MITIHANI YA SHULE">
+                    SCHOOL EXAMINATION RESULTS
+                </h2>
+
+                <p class="section-subtitle"
+                    data-en="Access official NECTA examination results for all Harvest Mission Schools."
+                    data-sw="Fikia matokeo rasmi ya NECTA kwa shule zote za Harvest Mission.">
+                    Access official NECTA examination results for all Harvest Mission Schools.
+                </p>
+            </div>
+
+            <div class="results-grid">
+
+                <!-- Form Two Results -->
+                <div class="result-card">
+                    <h3 data-en="Form Two Results (FTNA)" data-sw="Matokeo ya Kidato cha Pili (FTNA)">
+                        Form Two Results (FTNA)
+                    </h3>
+
+                    <p data-en="Latest results for the Form Two National Assessment."
+                    data-sw="Matokeo ya hivi karibuni ya Mtihani wa Kitaifa wa Kidato cha Pili.">
+                        Latest results for the Form Two National Assessment.
+                    </p>
+
+                    <a href="https://onlinesys.necta.go.tz/results/2024/ftna/results/S2119.htm"
+                    target="_blank" 
+                    class="view-btn"
+                    data-en="View FTNA Results" 
+                    data-sw="Tazama Matokeo ya FTNA">
+                        View FTNA Results
+                    </a>
+                </div>
+
+                <!-- Form Four Results -->
+                <div class="result-card">
+                    <h3 data-en="Form Four Results (CSEE)" data-sw="Matokeo ya Kidato cha Nne (CSEE)">
+                        Form Four Results (CSEE)
+                    </h3>
+
+                    <p data-en="Official Certificate of Secondary Education Examination (CSEE)."
+                    data-sw="Matokeo ya Mtihani wa Taifa wa Kidato cha Nne (CSEE).">
+                        Official Certificate of Secondary Education Examination (CSEE).
+                    </p>
+
+                    <a href="https://onlinesys.necta.go.tz/results/2024/csee/results/s2119.htm"
+                    target="_blank" 
+                    class="view-btn"
+                    data-en="View CSEE Results" 
+                    data-sw="Tazama Matokeo ya CSEE">
+                        View CSEE Results
+                    </a>
+                </div>
+
+                <!-- Form Six Results -->
+                <div class="result-card">
+                    <h3 data-en="Form Six Results (ACSEE)" data-sw="Matokeo ya Kidato cha Sita (ACSEE)">
+                        Form Six Results (ACSEE)
+                    </h3>
+
+                    <p data-en="Advanced Certificate of Secondary Education Examination (ACSEE)."
+                    data-sw="Matokeo ya Mtihani wa Taifa wa Kidato cha Sita (ACSEE).">
+                        Advanced Certificate of Secondary Education Examination (ACSEE).
+                    </p>
+
+                    <a href="https://matokeo.necta.go.tz/results/2025/acsee/results/s2119.htm"
+                    target="_blank" 
+                    class="view-btn"
+                    data-en="View ACSEE Results" 
+                    data-sw="Tazama Matokeo ya ACSEE">
+                        View ACSEE Results
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- Admissions Section -->
+    <section class="admissions-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-en="ADMISSIONS" data-sw="UDAHILI">ADMISSIONS</h2>
+                <p class="section-subtitle" data-en="Application Forms Download" data-sw="Pakua Fomu za Maombi">Application Forms Download</p>
+            </div>
+
+            <div class="admissions-grid">
+                <!-- High School Card -->
+                <div class="admission-card">
+                    <div class="admission-header">
+                        <h3 data-en="HIGH SCHOOL (A-LEVEL)" data-sw="(A-LEVEL)">HIGH SCHOOL (A-LEVEL)</h3>
+                        <span class="status-badge open" data-en="OPEN" data-sw="UNAFUNGULIWA">OPEN</span>
+                    </div>
+                    <div class="admission-notice">
+                        <p data-en="We are currently accepting applications for A-Level programs. Download the form below and submit before the deadline." 
+                        data-sw="Tunakubali maombi kwa programu za A-Level. Pakua fomu hapa chini na wasilisha kabla ya tarehe ya mwisho.">
+                        We are currently accepting applications for A-Level programs. Download the form below and submit before the deadline.
+                        </p>
+                    </div>
+                    <div class="admission-deadline">
+                        <strong data-en="Application Deadline:" data-sw="Mwisho wa Kuwasilisha Maombi:">Application Deadline:</strong>
+                        <span>August 30, 2024</span>
+                    </div>
+                    <a href="forms/high-school-application.pdf" class="download-btn" download>
+                        <i class="fas fa-download"></i>
+                        <span data-en="Download A-Level Form" data-sw="Pakua Fomu ya A-Level">Download A-Level Form</span>
+                    </a>
+                </div>
+
+                <!-- O-Level Card -->
+                <div class="admission-card">
+                    <div class="admission-header">
+                        <h3 data-en="O-LEVEL" data-sw="O-LEVEL">O-LEVEL</h3>
+                        <span class="status-badge closed" data-en="CLOSED" data-sw="IMEFUNGWA">CLOSED</span>
+                    </div>
+                    <div class="admission-notice">
+                        <p data-en="O-Level admissions are currently closed. Applications for the next academic year will open in January 2025." 
+                        data-sw="Udahili wa O-Level kwa sasa umefungwa. Maombi ya mwaka wa masomo ujao yatafunguliwa mnamo Januari 2025.">
+                        O-Level admissions are currently closed. Applications for the next academic year will open in January 2025.
+                        </p>
+                    </div>
+                    <div class="admission-deadline">
+                        <strong data-en="Next Intake:" data-sw="Kipindi Kijacho:">Next Intake:</strong>
+                        <span>January 2025</span>
+                    </div>
+                    <a href="forms/o-level-application.pdf" class="download-btn disabled" download>
+                        <i class="fas fa-download"></i>
+                        <span data-en="Download O-Level Form" data-sw="Pakua Fomu ya O-Level">Download O-Level Form</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- News Section -->
+    <section class="news-section" id="news">
+        <div class="container">
+
+            <div class="section-header">
+                <h2 class="section-title" data-en="LATEST NEWS" data-sw="HABARI MPYA">LATEST NEWS</h2>
+                <p class="section-subtitle" data-en="Recent updates and announcements" data-sw="Habari na matangazo ya hivi karibuni">
+                    Recent updates and announcements
+                </p>
+            </div>
+
+            <div class="news-grid">
+
+                <!-- NEWS CARD 1 -->
+                <div class="news-card">
+                    <div class="news-top">
+                        <div class="news-icon"><i class="fas fa-trophy"></i></div>
+                        <h3 class="news-title" data-en="A-Level Students Shine Nationally" data-sw="Wanafunzi wa A-Level Wafanya Vizuri Kitaifa">
+                            A-Level Students Shine Nationally
+                        </h3>
+                    </div>
+
+                    <p class="news-short" data-en="Harvest Mission secures outstanding 2024 ACSEE results." data-sw="Harvest Mission yapata matokeo bora ya ACSEE 2024.">
+                        Harvest Mission secures outstanding 2024 ACSEE results.
+                    </p>
+
+                    <p class="news-date" data-en="22 July 2024 • 10:00 AM" data-sw="22 Julai 2024 • 4:00 Asubuhi">
+                        22 July 2024 • 10:00 AM
+                    </p>
+
+                    <a href="#" class="news-btn" data-en="View Details" data-sw="Tazama Maelezo">
+                        <span>View Details</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- NEWS CARD 2 -->
+                <div class="news-card">
+                    <div class="news-top">
+                        <div class="news-icon"><i class="fas fa-flask"></i></div>
+                        <h3 class="news-title" data-en="New Science Lab Opened" data-sw="Maabara Mpya Yazinduliwa">
+                            New Science Lab Opened
+                        </h3>
+                    </div>
+
+                    <p class="news-short" data-en="A modern lab is now open for science practicals." data-sw="Maabara mpya ya kisasa sasa ipo wazi kwa praktikali.">
+                        A modern lab is now open for science practicals.
+                    </p>
+
+                    <p class="news-date" data-en="15 July 2024 • 1:00 PM" data-sw="15 Julai 2024 • 7:00 Mchana">
+                        15 July 2024 • 1:00 PM
+                    </p>
+
+                    <a href="#" class="news-btn" data-en="Read More" data-sw="Soma Zaidi">
+                        <span>Read More</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- NEWS CARD 3 -->
+                <div class="news-card">
+                    <div class="news-top">
+                        <div class="news-icon"><i class="fas fa-users"></i></div>
+                        <h3 class="news-title" data-en="Parents Meeting Held" data-sw="Mkutano wa Wazazi Kufanyika">
+                            Parents Meeting Held
+                        </h3>
+                    </div>
+
+                    <p class="news-short" data-en="Parents engaged in discussions on academic progress." data-sw="Wazazi walijadili maendeleo ya wanafunzi.">
+                        Parents engaged in discussions on academic progress.
+                    </p>
+
+                    <p class="news-date" data-en="2 July 2024 • 09:30 AM" data-sw="2 Julai 2024 • 3:30 Asubuhi">
+                        2 July 2024 • 09:30 AM
+                    </p>
+
+                    <a href="#" class="news-btn" data-en="Read More" data-sw="Soma Zaidi">
+                        <span>Read More</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+
+                <!-- MORE NEWS CARD (same style) -->
+                <a href="all-news.html" class="news-card more-news">
+                    <div class="news-top">
+                        <div class="news-icon"><i class="fas fa-newspaper"></i></div>
+                        <h3 class="news-title" data-en="More News & Updates" data-sw="Habari Nyingine">
+                            More News & Updates
+                        </h3>
+                    </div>
+
+                    <p class="news-short" data-en="Browse the full news archive" data-sw="Tazama orodha kamili ya habari">
+                        Browse the full news archive
+                    </p>
+
+                    <p class="news-date" data-en="Click to open full news list" data-sw="Fungua orodha ya habari">
+                        Click to open full news list
+                    </p>
+
+                    <div class="news-btn">
+                        <span data-en="Open" data-sw="Fungua">Open</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </a>
+
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+
+            <div class="section-header">
+                <h2 class="section-title" data-en="CONTACT US" data-sw="WASILIANA NASI">
+                    CONTACT US
+                </h2>
+                <p class="section-subtitle" 
+                    data-en="Get in touch with Harvest Mission Schools" 
+                    data-sw="Wasiliana na Shule za Harvest Mission">
+                    Get in touch with Harvest Mission Schools
+                </p>
+            </div>
+
+            <div class="contact-grid">
+
+                <!-- LEFT SIDE -->
+                <div class="contact-info">
+                    <h3 data-en="School Offices" data-sw="Ofisi za Shule">School Offices</h3>
+
+                    <p><i class="fas fa-map-marker-alt"></i>  
+                        <span data-en="Bukoba, Kagera – Tanzania" 
+                            data-sw="Bukoba, Kagera – Tanzania">
+                            Bukoba, Kagera – Tanzania
+                        </span>
+                    </p>
+
+                    <p><i class="fas fa-phone"></i>  
+                        <span data-en="+255 7XX XXX XXX" data-sw="+255 7XX XXX XXX">
+                            +255 7XX XXX XXX
+                        </span>
+                    </p>
+
+                    <p><i class="fas fa-envelope"></i>  
+                        <span data-en="info@harvestmissionschools.ac.tz" 
+                            data-sw="info@harvestmissionschools.ac.tz">
+                            info@harvestmissionschools.ac.tz
+                        </span>
+                    </p>
+                </div>
+
+                <!-- RIGHT SIDE -->
+                <div class="contact-form">
+                    <form>
+                        <input 
+                            type="text" 
+                            data-en="Full Name" 
+                            data-sw="Jina Kamili" 
+                            placeholder="Full Name" 
+                            required
+                        >
+
+                        <input 
+                            type="email" 
+                            data-en="Email Address" 
+                            data-sw="Barua Pepe" 
+                            placeholder="Email Address" 
+                            required
+                        >
+
+                        <input 
+                            type="text" 
+                            data-en="Subject" 
+                            data-sw="Mada" 
+                            placeholder="Subject" 
+                            required
+                        >
+
+                        <textarea 
+                            rows="5" 
+                            data-en="Your Message" 
+                            data-sw="Ujumbe Wako"
+                            placeholder="Your Message"
+                            required
+                        ></textarea>
+
+                        <button type="submit" class="contact-btn">
+                            <i class="fas fa-paper-plane"></i> 
+                            <span data-en="Send Message" data-sw="Tuma Ujumbe">Send Message</span>
+                        </button>
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-grid">
+
+            <!-- About -->
+            <div class="footer-col">
+                <h3 data-en="HARVEST MISSION SCHOOLS" data-sw="HARVEST MISSION SCHOOLS">
+                    HARVEST MISSION SCHOOLS
+                </h3>
+                <p data-en="Shaping students with strong academics, Christian values, and future-ready skills."
+                data-sw="Tunawaanda wanafunzi kwa elimu bora, maadili ya Kikristo na ujuzi wa mustakabali.">
+                Shaping students with strong academics, Christian values, and future-ready skills.
+                </p>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="footer-col">
+                <h3 data-en="Quick Links" data-sw="Viungo Muhimu">Quick Links</h3>
+                <ul>
+                    <li><a href="#home" data-en="Home" data-sw="Nyumbani">Home</a></li>
+                    <li><a href="#about" data-en="About" data-sw="Kuhusu">About</a></li>
+                    <li><a href="#schools" data-en="Schools" data-sw="Shule">Schools</a></li>
+                    <li><a href="#" data-en="News" data-sw="Habari">News</a></li>
+                    <li><a href="#results" data-en="Results" data-sw="Matokeo">Results</a></li>
+                    <li><a href="#contact" data-en="Contact" data-sw="Mawasiliano">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="footer-col">
+                <h3 data-en="Contact" data-sw="Mawasiliano">Contact</h3>
+
+                <p><i class="fas fa-map-marker-alt"></i>
+                    <span data-en="Bukoba, Kagera - Tanzania" 
+                        data-sw="Bukoba, Kagera - Tanzania">Bukoba, Kagera - Tanzania</span>
+                </p>
+
+                <p><i class="fas fa-phone"></i>
+                    <span data-en="+255 7XX XXX XXX" data-sw="+255 7XX XXX XXX">+255 7XX XXX XXX</span>
+                </p>
+
+                <p><i class="fas fa-envelope"></i>
+                    <span data-en="info@harvestmissionschools.ac.tz" 
+                        data-sw="info@harvestmissionschools.ac.tz">info@harvestmissionschools.ac.tz</span>
+                </p>
+
+                <div class="footer-socials">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Bottom Bar -->
+        <div class="footer-bottom">
+            <p data-en="© 2025 Harvest Mission Schools. All rights reserved."
+            data-sw="© 2025 Harvest Mission Schools. Haki zote zimehifadhiwa.">
+            © 2025 Harvest Mission Schools. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+
+
+    <script src="scripts/carousel.js"></script>
+    <script src="scripts/language.js"></script>
+</body>
+</html>
