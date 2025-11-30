@@ -142,12 +142,19 @@ body {
 /* ===== MOBILE NAV DROPDOWN ===== */
 @media (max-width: 768px) {
     .header-content {
-        padding: 10px 5%;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
     }
 
     .logo-lang {
         display: flex;
         flex-direction: column;
+    }
+
+    .navig {
+        position: flex;
+        width: 100%;
     }
 
     .menu-toggle {
@@ -163,7 +170,7 @@ body {
     /* Mobile nav dropdown */
     #mobileNav {
         position: absolute;
-        top: 80px;
+        top: 150px;
         right: 0;
         width: 280px;
         background: #8B4513; /* Brown background */
