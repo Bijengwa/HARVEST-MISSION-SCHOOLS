@@ -84,7 +84,6 @@ body {
 /* ===== NAVIGATION ===== */
 .navig nav ul {
     display: flex;
-    gap: 30px;
     list-style: none;
 }
 
@@ -252,6 +251,27 @@ body {
 
 section {
     scroll-margin-top: 140px;
+    padding: 20px 15px !important;
+}
+
+.home-section {
+    padding: 0 !important;
+}
+
+@media (max-width: 768px) {
+
+    section {
+        padding: 10px 10px !important;
+    }
+
+    .home-section {
+        padding: 0 !important;
+    }
+
+    .container {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
 }
 
 
@@ -1516,7 +1536,7 @@ section {
 
 .news-date {
     font-size: 0.85rem;
-    color: #555;
+    color: #e57d7d;
     margin-bottom: 18px;
     font-weight: 600;
 }
