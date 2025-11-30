@@ -145,8 +145,14 @@ body {
         padding: 10px 5%;
     }
 
+    .logo-lang {
+        display: flex;
+        flex-direction: column;
+    }
+
     .menu-toggle {
         display: block;
+
     }
 
     /* Hide desktop nav */
@@ -157,7 +163,7 @@ body {
     /* Mobile nav dropdown */
     #mobileNav {
         position: absolute;
-        top: 70px;
+        top: 80px;
         right: 0;
         width: 280px;
         background: #8B4513; /* Brown background */
@@ -237,6 +243,9 @@ body {
     }
 }
 
+section {
+    scroll-margin-top: 140px;
+}
 
 
 /* Home Section Styles */
